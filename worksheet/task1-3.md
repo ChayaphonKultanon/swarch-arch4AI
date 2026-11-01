@@ -1,8 +1,8 @@
 # Tutorial 6 worksheet: serving patterns
 
-**Name / ชื่อ:**
+**Name / ชื่อ: ชยพล กุลตานนท์**
 
-**Student ID / รหัสนิสิต:**
+**Student ID / รหัสนิสิต: 6631306021**
 
 This is **individual work**: each student completes and submits their own copy, in their own fork.
 
@@ -16,20 +16,20 @@ Copy result rows from `results/runs.csv` (or the load test's output) into the ta
 
 | Run | p50 ms | p95 ms | accuracy | large calls |
 |---|---|---|---|---|
-| t0-large | | | | |
-| t0-small | | | | |
+| t0-large | 507 | 592 | 93.5% | 100% |
+| t0-small | 11 | 38 | 72.5% | 0% |
 
 **Q0.** What does the large model buy, and what does it cost?
 
 *large model ให้อะไรเพิ่ม และต้องแลกด้วยอะไร*
 
->
+> large model ให้ accuracy ที่มากขึ้น แต่ก็แลกมาด้วย latency ที่สูงขึ้นเช่นกัน
 
 ## Task 1: Fallback prediction (copy the Task 1 results from `results/runs.csv` here / copy ผลลัพธ์ของ Task 1 จาก `results/runs.csv` มาวางที่นี่)
 
 | Run | run time (s) | p50 ms | p95 ms | errors | pending | accuracy |
 |---|---|---|---|---|---|---|
-| t1-before | | | | | | |
+| t1-before | 26.7 s | 229 | 411 | 18 | 0 | 93.4% |
 | t1-after | | | | | | |
 
 **Q1.1** In `t1-before`, p50 can look *better* than the baseline. Why is p50 misleading here? Which column tells the real story?
